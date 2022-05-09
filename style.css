@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*
+font-family: 'Red Hat Display', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+body{
+    background: url('src/images/pattern-background-desktop.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #FFFF;
+
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 20px;
+
+}
+
+.card h2{
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.card p{
+    text-align: center;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #717FA6;
+    margin-bottom: 20px;
+}
+
+.AnnualPlan{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F7F9FF;   
+    width: 90%;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.AnnualPlan div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.AnnualPlan div h4{
+    font-size: 16px;
+    color: #1F2E55;
+    font-weight: 900;
+
+}
+
+.AnnualPlan div span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #717FA6;
+}
+
+.AnnualPlan a{
+    text-decoration: underline;
+}
+
+.card button{
+    width: 90%;
+    cursor: pointer;
+}
+
+.card button:hover{
+    transition: 0.5s;
+    width: 95%;
+}
+
+.card .Payment{
+    background-color: #382AE1;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card .Cancel{
+    background-color: #FFFF;
+    color: #717FA6;
+    margin: 10px;
+}
+
+@media (max-width: 550px) {
+    body{
+        background: #E0E8FF;
+    }
+}
